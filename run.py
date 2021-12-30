@@ -33,7 +33,6 @@ print("Running for %i seconds (hours %.1f)"%(MAX_TIME,MAX_TIME/3600))
 strip = PixelStrip(LED_COUNT, LED_PIN, LED_FREQ_HZ, LED_DMA, LED_INVERT, LED_BRIGHTNESS, LED_CHANNEL, LED_STRIP)
 
 def fill(strip, color):
-    """Wipe color across display a pixel at a time."""
     for i in range(strip.numPixels()):
         strip.setPixelColor(i, color)
 
