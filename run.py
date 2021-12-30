@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 
-import tqdm
 import time
 from rpi_ws281x import PixelStrip, Color, ws
 
@@ -78,6 +77,7 @@ def effect(left, leds, nmax=MAX_TIME):
     else:
         fill(leds, IDLE_COLOR)
         leds.show()
+        time.sleep(1)
 
 strip.begin()
 today = datetime.date.today()
